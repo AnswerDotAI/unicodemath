@@ -1,0 +1,234 @@
+{
+ "∀x>0 x^a x^b = x^(a+b)": [
+  "\\forall x > 0(x^ax^b = x^{a+b})",
+  "∀(>(x,0),=(\\,(^(x,a),^(x,b)),^(x,+(a,b))))"
+ ],
+ "∀x>0x^ax^b=x^(a+b)": [
+  "\\forall x > 0(x^ax^b = x^{a+b})",
+  "∀(>(x,0),=(\\,(^(x,a),^(x,b)),^(x,+(a,b))))"
+ ],
+ "∀x,y>0((xy)^a = x^ay^a)": [
+  "\\forall x,y > 0((xy)^a = x^ay^a)",
+  "∀(>(,(x,y),0),=(^(\\,(x,y),a),\\,(^(x,a),^(y,a))))"
+ ],
+ "|x+y| ≤ |x|+|y|": [
+  "|x+y| \\le |x|+|y|",
+  "≤(|(+(x,y)),+(|(x),|(y)))"
+ ],
+ "|xy| = (|x||y|)": [
+  "|xy| = |x| |y|",
+  "=(|(\\,(x,y)),\\,(|(x),|(y)))"
+ ],
+ "|xy| = |x||y|": [
+  "(|xy| = |x|) |y|",
+  "\\,(=(|(\\,(x,y)),|(x)),|(y))"
+ ],
+ "x+y = y+x": [
+  "x+y = y+x",
+  "=(+(x,y),+(y,x))"
+ ],
+ "(x+y)+z = x+(y+z)": [
+  "(x+y)+z = x+(y+z)",
+  "=(+(+(x,y),z),+(x,+(y,z)))"
+ ],
+ "x+0 = x": [
+  "x+0 = x",
+  "=(+(x,0),x)"
+ ],
+ "x+-x = 0": [
+  "x+-x = 0",
+  "=(+(x,-(x)),0)"
+ ],
+ "-x+x = 0": [
+  "-x+x = 0",
+  "=(+(-(x),x),0)"
+ ],
+ "(xy)z = x(yz)": [
+  "xyz = x(yz)",
+  "=(\\,(x,y,z),\\,(x,\\,(y,z)))"
+ ],
+ "x(y+z) = xy+xz": [
+  "x(y+z) = xy+xz",
+  "=(\\,(x,+(y,z)),+(\\,(x,y),\\,(x,z)))"
+ ],
+ "(x+y)⋅z = x⋅z+y⋅z": [
+  "(x+y)\\cdot z = x\\cdot z+y\\cdot z",
+  "=(⋅(+(x,y),z),+(⋅(x,z),⋅(y,z)))"
+ ],
+ "a|b ⟺ ∃c ∈ ℤ(ac=b)": [
+  "a|b \\iff \\exists c \\in \\mathbb Z (ac = b)",
+  "⟺(|(a,b),∃(∈(c,ℤ),=(\\,(a,c),b)))"
+ ],
+ "a∣b ⟺ ∃c ∈ ℤ(ac=b)": [
+  "a\\mid b \\iff \\exists c \\in \\mathbb Z (ac = b)",
+  "∣(a,⟺(b,∃(∈(c,ℤ),=(\\,(a,c),b))))"
+ ],
+ "A ∪ B = \\{x ∣ x ∈ A or x ∈ B\\}": [
+  "A\\cup B = \\{x \\mid x \\in A \\text{ or } x \\in B\\}",
+  "=(∪(A,B),\\{(x,or(∈(x,A),∈(x,B))))"
+ ],
+ "d/dx(f(x)) = lim_{h→0}(f(x+h)-f(x))/h": [
+  "d/dxf(x) = \\lim_{h\\to 0} (f(x+h)-f(x))/h",
+  "=(/(d,\\,(d,x,f(x))),lim(→(h,0),/(-(f(+(x,h)),f(x)),h)))"
+ ],
+ "d/dx(f(x)g(x)) = d/dx(f(x))g(x) + f(x)d/dx(g(x))": [
+  "d/dx(f(x)g(x)) = d/dxf(x)g(x)+f(x)d/dxg(x)",
+  "=(/(d,\\,(d,x,\\,(f(x),g(x)))),+(/(d,\\,(d,x,f(x),g(x))),/(\\,(f(x),d),\\,(d,x,g(x)))))"
+ ],
+ "(fg)' = f'g+fg'": [
+  "(f(g))' = f'g+(f(g))'",
+  "=('(f(g)),+(\\,('(f),g),'(f(g))))"
+ ],
+ "x+⋅y": [
+  "x+\\cdot y",
+  "+(x,\\,(⋅,y))"
+ ],
+ "∫_a^b f(x) dx = lim_{n→∞} ∑_{i=1}^n f(x_i^*)(b-a)/n": [
+  "\\int_a^bf(x)dx = \\lim_{n\\to \\infty } (\\sum_{i = 1}^nf(x_i^*)(b-a)/n)",
+  "=(∫(a,b,\\,(f(x),d,x)),lim(→(n,∞),∑(=(i,1),n,/(\\,(f(^(_(x,i),*)),-(b,a)),n))))"
+ ],
+ "∫ f(x) dx = F(x)+C": [
+  "\\int f(x)dx = F(x)+C",
+  "=(∫(,\\,(f(x),d,x)),+(F(x),C))"
+ ],
+ "∫_C f(x) dx = 0": [
+  "\\int_C f(x)dx = 0",
+  "=(∫(C,\\,(f(x),d,x)),0)"
+ ],
+ "∏_(i=1)^(n+1) a_i = (∏_(i=1)^n a_i)a_(n+1)": [
+  "\\prod_{i = 1}^{n+1}a_i = (\\prod_{i = 1}^na_i)a_{n+1}",
+  "=(∏(=(i,1),+(n,1),_(a,i)),\\,(∏(=(i,1),n,_(a,i)),_(a,+(n,1))))"
+ ],
+ "δ + 1": [
+  "\\delta +1",
+  "+(δ,1)"
+ ],
+ "lim_{x→a} f(x) = L ⟺ ∀ɛ>0 ∃δ>0 ∀x(0 < |x-a| < δ ⟹ |f(x)-L| < ɛ)": [
+  "\\lim_{x\\to a} f(x) = L \\iff \\forall \\varepsilon  > 0\\exists \\delta  > 0\\forall x(0 < |x-a| < \\delta  \\implies |f(x)-L| < \\varepsilon )",
+  "⟺(=(lim(→(x,a),f(x)),L),∀(>(ɛ,0),∃(>(δ,0),∀(x,⟹(<(0,|(-(x,a)),δ),<(|(-(f(x),L)),ɛ))))))"
+ ],
+ "sin xy": [
+  "\\sin xy",
+  "sin(\\,(x,y))"
+ ],
+ "sin x+y": [
+  "\\sin x+y",
+  "+(sin(x),y)"
+ ],
+ "sinx": [
+  "\\sin x",
+  "sin(x)"
+ ],
+ "f(x) y": [
+  "f(x)y",
+  "\\,(f(x),y)"
+ ],
+ "a:A×A→A": [
+  "a:A\\times A\\to A",
+  ":(a,→(×(A,A),A))"
+ ],
+ "A ⊨ φ": [
+  "A \\models \\varphi ",
+  "⊨(A,φ)"
+ ],
+ "1/2x": [
+  "1/2x",
+  "/(1,\\,(2,x))"
+ ],
+ "1/2⋅x": [
+  "(1/2)\\cdot x",
+  "⋅(/(1,2),x)"
+ ],
+ "f(x,y,z,u,v,w)": [
+  "f(x,y,z,u,v,w)",
+  "f(,(x,y,z,u,v,w))"
+ ],
+ "xRy and yRz ⟹ xRz": [
+  "x R y \\text{ and } y R z \\implies x R z",
+  "⟹(and(R(x,y),R(y,z)),R(x,z))"
+ ],
+ "f(x)^2": [
+  "f(x)^2",
+  "^(f(x),2)"
+ ],
+ "f^2(x) = f(x)^2": [
+  "f^2x = f(x)^2",
+  "=(\\,(^(f,2),x),^(f(x),2))"
+ ],
+ "sin^2 x": [
+  "\\sin ^2x",
+  "\\,(^(sin,2),x)"
+ ],
+ "n:ℕ": [
+  "n:\\mathbb N ",
+  ":(n,ℕ)"
+ ],
+ "f'(x) = (f(x))' = d/dx(f(x))": [
+  "f'x = (f(x))' = d/dxf(x)",
+  "=(\\,('(f),x),'(f(x)),/(d,\\,(d,x,f(x))))"
+ ],
+ "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ": [
+  "\\mathbb N  \\subset \\mathbb Z  \\subset \\mathbb Q  \\subset \\mathbb R  \\subset \\mathbb C ",
+  "⊂(ℕ,ℤ,ℚ,ℝ,ℂ)"
+ ],
+ "lim f(x)": [
+  "\\lim f(x)",
+  "lim(,f(x))"
+ ],
+ "2(1+1) = -21.0": [
+  "2(1+1) = -21.0",
+  "=(\\,(2,+(1,1)),-(21.0))"
+ ],
+ "f[X] = \\{f(x) ∣ x ∈ X\\}": [
+  "f[X] = \\{f(x) \\mid x \\in X\\}",
+  "=(f([(X)),\\{(f(x),∈(x,X)))"
+ ],
+ "A×A×A×A→A→A→A→A": [
+  "A\\times A\\times A\\times A\\to A\\to A\\to A\\to A",
+  "→(×(A,A,A,A),A,A,A,A)"
+ ],
+ "h : ℝ^m → ℝ^n": [
+  "h:\\mathbb R ^m\\to \\mathbb R ^n",
+  ":(h,→(^(ℝ,m),^(ℝ,n)))"
+ ],
+ "(f+g)(x)": [
+  "(f+g)x",
+  "\\,(+(f,g),x)"
+ ],
+ "(f,…,g)": [
+  "f,\\dots ,g",
+  ",(f,…,g)"
+ ],
+ "f": [
+  "f",
+  "f"
+ ],
+ "asso(⋅) = ((x⋅y)⋅z = x⋅(y⋅z))": [
+  "\\text{asso}(\\cdot ) = ((x\\cdot y)\\cdot z = x\\cdot (y\\cdot z))",
+  "=(asso(⋅),=(⋅(⋅(x,y),z),⋅(x,⋅(y,z))))"
+ ],
+ "comm(⋅) = (x⋅y = y⋅x)": [
+  "\\text{comm}(\\cdot ) = (x\\cdot y = y\\cdot x)",
+  "=(comm(⋅),=(⋅(x,y),⋅(y,x)))"
+ ],
+ "idem(⋅) = (x⋅x = x)": [
+  "\\text{idem}(\\cdot ) = (x\\cdot x = x)",
+  "=(idem(⋅),=(⋅(x,x),x))"
+ ],
+ "SemilatticeAx(⋅) = asso(⋅) and comm(⋅) and idem(⋅)": [
+  "\\text{SemilatticeAx}(\\cdot ) = \\text{asso}(\\cdot ) \\text{ and } \\text{comm}(\\cdot ) \\text{ and } \\text{idem}(\\cdot )",
+  "and(=(SemilatticeAx(⋅),asso(⋅)),comm(⋅),idem(⋅))"
+ ],
+ "abso(∨,∧) = ((x∨y)∧x = x)": [
+  "\\text{abso}(\\vee ,\\wedge ) = ((x\\vee y)\\wedge x = x)",
+  "=(abso(,(∨,∧)),=(∧(∨(x,y),x),x))"
+ ],
+ "LatticeAx(∨,∧) = (SemilatticeAx(∨) and SemilatticeAx(∧) and abso(∨,∧) and abso(∧,∨))": [
+  "\\text{LatticeAx}(\\vee ,\\wedge ) = (\\text{SemilatticeAx}(\\vee ) \\text{ and } \\text{SemilatticeAx}(\\wedge ) \\text{ and } \\text{abso}(\\vee ,\\wedge ) \\text{ and } \\text{abso}(\\wedge ,\\vee ))",
+  "=(LatticeAx(,(∨,∧)),and(SemilatticeAx(∨),SemilatticeAx(∧),abso(,(∨,∧)),abso(,(∧,∨))))"
+ ],
+ "s": [
+  "s",
+  "s"
+ ]
+}
